@@ -693,13 +693,16 @@ a{
     height: 120px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     resize:none;
+    padding: 8px 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: transparent;
+    outline: transparent;
 }
 
 textarea::placeholder{
@@ -738,6 +741,13 @@ textarea::placeholder{
     color: #4d5ae5;
 }
 
+.visually-hidden-link{
+    line-height: 16px; 
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
 
 .button-submit{
     display: block;
