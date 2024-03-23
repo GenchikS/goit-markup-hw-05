@@ -636,6 +636,10 @@ a{
 .container-label{
     margin-bottom: 8px;
 }
+/* .form-input{
+    display: block;
+    align-items: center;
+} */
 
 .form-label{
     display: block;
@@ -697,38 +701,75 @@ a{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-textarea:focus{
-    border-color: 1px solid #4D5AE5;
+textarea::placeholder{
+    border-color: #4D5AE5;
 }
 
+.conrainer-checkbox{
+    display: flex;
+    margin-bottom: 24px;
+}
 
-.input-checkbox{
+.user-privacy{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.user-privacy-link{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.visually-hidden{
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
 }
 
-.conditions{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+.visually-hidden-svg{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
 }
 
-.conditions-text{
-    align-self: flex-start;
-    
-    margin-left: 8px;
-   
-}
+
+
+/* .input-checkbox{
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+} */
 
 .button-submit{
-    width: 169px;
+    display: block;
+    min-width: 169px;
     height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4d5ae5;
+    border: none;
     margin-top: 24px;
     margin-bottom: 24px;
     border-radius: 4px;
+    justify-content: center;
     align-self: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
