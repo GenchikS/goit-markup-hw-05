@@ -686,6 +686,7 @@ a{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     resize:none;
     padding: 8px 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -701,18 +702,12 @@ a{
 
 .conrainer-checkbox{
     display: flex;
-    
     margin-bottom: 24px;
 }
 
 .visually-hidden{
-    /* display: inline-flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     width: 16px;
     height: 16px;
-    
-    /* fill: transparent; */
 }
 
 .user-privacy{
@@ -725,7 +720,7 @@ a{
 }
 
 .user-privacy-span{
-    display: flex;
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -739,8 +734,9 @@ a{
 }
 
 .visually-hidden:checked + .user-privacy .user-privacy-span{
-    background-color: #4d5ae5;
-    fill: #ffffff;
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .visually-hidden-link{
